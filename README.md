@@ -8,17 +8,17 @@ Try the sample app.
 ```
 $ vagrant ssh
 
-vagrant@vagrant:~$ cd vagrant
+vagrant@vagrant:~$ cd /vagrant
 vagrant@vagrant:~$ cd sample_project
 
-vagrant@vagrant:~/vagrant/sample_project$ mix deps.get
+vagrant@vagrant:/vagrant/sample_project$ mix deps.get
 Shall I install Hex? [Y] 
 [...] Installing dependencies [...]
 
-vagrant@vagrant:~/vagrant/sample_project$ npm install
+vagrant@vagrant:/vagrant/sample_project$ npm install
 [...] Installing NPM packages [...]
 
-vagrant@vagrant:~/vagrant/sample_project$ mix phoenix.server
+vagrant@vagrant:/vagrant/sample_project$ mix phoenix.server
 Shall I install rebar? [Y] 
 [...] Installing rebar and compiling stuff [...]
 
