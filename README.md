@@ -24,3 +24,8 @@ Shall I install rebar? [Y]
 ```
 
 Server listens at http://localhost:4000 on your host machine. 
+
+# Issues
+Sometimes NPM fails with errors like `npm ERR! enoent ENOENT: no such file or directory, chmod '/vagrant/sample_project/node_modules/escodegen/bin/esgenerate.js'` while running `npm install`.
+
+What helps is running `npm cache clean && npm install`.
