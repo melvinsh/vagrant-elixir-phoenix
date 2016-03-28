@@ -1,4 +1,6 @@
 # vagrant-elixir-phoenix
+First, install the `fsnotify` plugin to enable auto-reloading when you change your code.  
+`vagrant plugin install vagrant-fsnotify`
 
 Provision the box:  `$ vagrant up`
 
@@ -29,3 +31,5 @@ Server listens at http://localhost:4000 on your host machine.
 Sometimes NPM fails with errors like `npm ERR! enoent ENOENT: no such file or directory, chmod '/vagrant/sample_project/node_modules/escodegen/bin/esgenerate.js'` while running `npm install`.
 
 What helps is running `npm cache clean && npm install`.
+
+If you're having trouble with shared folders because of an incorrect version of Guest Additions, install the `vbguest` plugin with `vagrant plugin install vagrant-vbguest`. Use `vagrant reload` after.
