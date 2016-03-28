@@ -6,6 +6,6 @@ wget --quiet https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 dpkg -i erlang-solutions_1.0_all.deb && rm erlang-solutions_1.0_all.deb
 
 apt-get -y update
-apt-get -y install esl-erlang elixir
+apt-get -y install esl-erlang elixir inotify-tools
 
 echo "[X] Installed Erlang & Elixir!"
